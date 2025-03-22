@@ -196,13 +196,16 @@ public class AdminController {
 		
 		FoodDetails fs=fdservice.update(f_id);
 		FoodDto fd=new FoodDto();
+		fd.setF_id(fs.getF_id());
 		 fd.setFood_name(fs.getFood_name());
 		 fd.setDiscription(fs.getDiscription());
 		 fd.setPrice(fs.getPrice());
 		 fd.setDiscount(fs.getDiscount()); 
 		 fd.setCategoryId(fs.getCategory().getId());
+		 fd.setResturrentId(fs.getResturent().getId());
 		 fd.setImageName(fs.getImageName());
 		 model.addAttribute("categories", service.findAllCategory());
+		 model.addAttribute("resurent", res.FetchAllResturent());
 		 model.addAttribute("food", fd);
 			
 		 return"AddFood";

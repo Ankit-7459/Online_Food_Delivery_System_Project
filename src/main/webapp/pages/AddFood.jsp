@@ -155,7 +155,7 @@
 
                        <c:forEach var="e" items="${categories}">
                        
-                       <option value="${e.id} " ${e.id==obj.categoryId ? "select":""}>${e.name}</option>
+                       <option value="${e.id} " ${e.id==obj.categoryId ? "selected":""}>${e.name}</option>
                        </c:forEach>
 
                     </select>
@@ -170,7 +170,7 @@
 
                        <c:forEach var="res" items="${resurent}">
                        
-                       <option value="${res.id} " ${res.id==obj.resturrentId ? "select":""}>${res.rname}</option>
+                       <option value="${res.id} " ${res.id==obj.resturrentId ? "selected":""}>${res.rname}</option>
                        </c:forEach>
 
                     </select>
@@ -191,8 +191,7 @@
             <input type="submit" value="sumbit" class="btn btn-warning me-2"style="width: 128px;
     height: 43px;">
               
-              <a href="/admin" class="btn btn-danger me-2" style="width: 128px;
-    height: 43px;">Close Form</a>
+            
     
         <input type="reset" value="cancel" class="btn btn-primary" style="width: 128px;
     height: 43px;">

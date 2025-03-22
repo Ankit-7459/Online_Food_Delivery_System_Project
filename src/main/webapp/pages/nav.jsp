@@ -56,7 +56,7 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Add Restaurant</a>
+          <a class="nav-link active" aria-current="page" href="/resurent/Add">Add Restaurant</a>
         </li>
         
       </ul>
